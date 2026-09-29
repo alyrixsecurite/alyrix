@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
     <a class="brand" href="index.html">
       <img src="logo-alyrix.png.png" alt="ALYRIX, protéger ce qui compte" class="alyrix-logo">
@@ -36,6 +37,7 @@
     <span class="status">Projet en préparation</span>
   </header>
 
+  <!-- CONTENU -->
   <main>
     <section class="page-hero">
       <p class="eyebrow">QUESTIONNAIRE · ÉTUDE DE MARCHÉ</p>
@@ -45,13 +47,69 @@
 
     <section class="content">
       <div class="content-panel">
-        <h2>Formulaire d'étude</h2>
-        <p>Remplissez ce formulaire rapide pour nous faire part de vos besoins ou questions sur le projet ALYRIX.</p>
-        <a class="button" href="index.html">Retour à l'accueil</a>
+        <h2>Formulaire d'étude de marché</h2>
+        <p>Remplissez ce questionnaire rapide pour nous faire part de vos besoins.</p>
+        
+        <form action="https://formspree.io/f/xvgpqqky" method="POST" class="survey-form">
+          <div class="form-group">
+            <label for="name">Votre nom / Prénom :</label>
+            <input type="text" id="name" name="Nom" placeholder="Votre nom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Votre e-mail :</label>
+            <input type="email" id="email" name="E-mail" placeholder="exemple@domaine.fr" required>
+          </div>
+
+          <div class="form-group">
+            <label for="profile">Vous êtes :</label>
+            <select id="profile" name="Profil">
+              <option value="Particulier">Un particulier</option>
+              <option value="Professionnel">Un professionnel / Entreprise</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="domain">Domaine d'intérêt principal :</label>
+            <select id="domain" name="Domaine d'intérêt">
+              <option value="Alarmes">Alarmes anti-intrusion</option>
+              <option value="Vidéosurveillance">Vidéosurveillance</option>
+              <option value="Contrôle d'accès">Contrôle d'accès / Visiophonie</option>
+              <option value="Motorisation de portail">Motorisation de portail</option>
+              <option value="Domotique">Domotique & Maison connectée</option>
+              <option value="Petite électricité">Petite électricité</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="horizon">Horizon de votre projet :</label>
+            <select id="horizon" name="Horizon">
+              <option value="Immédiat">Dès que possible</option>
+              <option value="Dans les 3 prochains mois">Dans les 3 prochains mois</option>
+              <option value="Dans les 6 à 12 mois">Dans les 6 à 12 mois</option>
+              <option value="Simple curiosité">Simple information / Curiosité</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Vos remarques ou besoins spécifiques :</label>
+            <textarea id="message" name="Message" rows="5" placeholder="Décrivez votre besoin..."></textarea>
+          </div>
+
+          <div class="form-group consent-group">
+            <label>
+              <input type="checkbox" name="Consentement" value="Accepté" required>
+              J'accepte que mes données soient utilisées dans le cadre de cette étude de marché.
+            </label>
+          </div>
+
+          <button type="submit" class="button">Envoyer mes réponses</button>
+        </form>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <a class="brand" href="index.html">
       <img src="logo-alyrix.png.png" alt="ALYRIX" class="alyrix-logo">
