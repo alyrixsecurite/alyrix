@@ -135,3 +135,9 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 .store-canopy .wordmark{filter:drop-shadow(0 5px 3px #0008)}
 .store-canopy .wordmark-y{filter:drop-shadow(0 4px 2px #0008)}
 @media(max-width:760px){.alyrix-logo{width:175px}.store-canopy .building-logo{width:78%}}
+
+/* Y fidèle au logo : deux branches bleu profond séparées et fût blanc */
+.wordmark-y{fill:#0068c9;filter:drop-shadow(0 3px 2px #0008)}
+.wordmark-stem{fill:#f4f5f7;filter:drop-shadow(0 3px 2px #0008)}
+.store-canopy .wordmark-y{fill:#0068c9}
+.store-canopy .wordmark-stem{fill:#f4f5f7}
