@@ -124,3 +124,14 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 .store-canopy .logo-tagline{font-size:8px;letter-spacing:3px;fill:#e5eaf0}
 .store-canopy b{display:none}
 @media(max-width:760px){.alyrix-logo{width:175px}.store-canopy .building-logo{width:65%}.store-canopy .logo-letters{font-size:37px}}
+
+/* Logo ALYRIX redessiné d'après la référence fournie */
+.alyrix-logo{display:block;width:205px;height:auto;overflow:visible}
+.wordmark{filter:drop-shadow(0 5px 3px #0007)}
+.wordmark-tagline{font-family:Arial,Helvetica,sans-serif;font-size:38px;font-weight:500;letter-spacing:14px;fill:#f1f2f4}
+.wordmark-y{filter:drop-shadow(0 4px 2px #0008)}
+.store-canopy .building-logo{display:block;width:min(72%,520px);height:auto;overflow:visible}
+.store-canopy .wordmark-tagline{font-size:38px;letter-spacing:14px}
+.store-canopy .wordmark{filter:drop-shadow(0 5px 3px #0008)}
+.store-canopy .wordmark-y{filter:drop-shadow(0 4px 2px #0008)}
+@media(max-width:760px){.alyrix-logo{width:175px}.store-canopy .building-logo{width:78%}}
