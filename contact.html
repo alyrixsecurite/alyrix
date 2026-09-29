@@ -66,7 +66,8 @@
 
           <div class="form-group">
             <label for="profile">Vous êtes :</label>
-            <select id="profile" name="Profil">
+            <select id="profile" name="Profil" required>
+              <option value="" selected disabled>Sélectionnez votre profil</option>
               <option value="Particulier">Un particulier</option>
               <option value="Professionnel">Un professionnel / Entreprise</option>
             </select>
@@ -74,7 +75,8 @@
 
           <div class="form-group">
             <label for="domain">Domaine d'intérêt principal :</label>
-            <select id="domain" name="Domaine d'intérêt">
+            <select id="domain" name="Domaine d'intérêt" required>
+              <option value="" selected disabled>Sélectionnez un domaine</option>
               <option value="Alarmes">Alarmes anti-intrusion</option>
               <option value="Vidéosurveillance">Vidéosurveillance</option>
               <option value="Contrôle d'accès">Contrôle d'accès / Visiophonie</option>
@@ -86,7 +88,8 @@
 
           <div class="form-group">
             <label for="horizon">Horizon de votre projet :</label>
-            <select id="horizon" name="Horizon">
+            <select id="horizon" name="Horizon" required>
+              <option value="" selected disabled>Sélectionnez un horizon</option>
               <option value="Immédiat">Dès que possible</option>
               <option value="Dans les 3 prochains mois">Dans les 3 prochains mois</option>
               <option value="Dans les 6 à 12 mois">Dans les 6 à 12 mois</option>
@@ -98,6 +101,8 @@
             <label for="message">Vos remarques ou besoins spécifiques :</label>
             <textarea id="message" name="Message" rows="5" placeholder="Décrivez votre besoin..."></textarea>
           </div>
+
+          <p class="hint">Les informations transmises servent uniquement à cette étude de marché. Le nom et l’e-mail sont demandés pour permettre le suivi des réponses. Consultez notre <a href="confidentialite.html"><strong>politique de confidentialité</strong></a> pour connaître les modalités de traitement et vos droits.</p>
 
           <div class="form-group consent-group" style="margin-top: 15px; margin-bottom: 20px;">
             <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; text-align: left;">
