@@ -66,3 +66,48 @@ footer .alyrix-logo{width:190px}
 .store-caption{position:absolute;left:17px;right:17px;bottom:11%;display:flex;justify-content:space-between;gap:12px;color:#d5e5f4;font-size:8px;letter-spacing:1.5px;z-index:4}
 .store-caption b{color:#6dbbff}
 @media(max-width:760px){.storefront-art{height:300px}.store-canopy{top:12%;height:27%}.store-canopy span{font-size:28px}.storefront{top:42%;bottom:11%;left:3%;right:3%;gap:3px;padding:4px}.store-caption{font-size:7px;letter-spacing:.8px}.store-camera{top:34%;right:7%;transform:scale(.8) rotate(-7deg)}.alyrix-logo{width:175px}}
+
+/* Ajustement fidèle à la référence : bleu nuit, ardoise, blanc doux et bleu en accent */
+:root{--bg:#07111f;--panel:#101d2b;--panel2:#172638;--text:#f0f3f7;--muted:#b3bfcc;--blue:#0876d8;--blue2:#1686e8;--line:#344b62;--max:1160px}
+body{background:#07111f;color:#f0f3f7;font-family:Arial,Helvetica,sans-serif;letter-spacing:.01em}
+.site-header{background:#07111f;border-bottom:1px solid #344b62}
+.nav,.nav>a,.drop-button{font-family:Arial,Helvetica,sans-serif;font-weight:400;letter-spacing:.02em}
+.hero h1,.page-hero h1,h2,h3{font-family:Arial,Helvetica,sans-serif;font-weight:500;letter-spacing:-.025em}
+.hero h1{font-size:clamp(39px,4.6vw,59px);line-height:1.08}
+.hero h1 em{color:#1686e8;font-weight:500}
+.eyebrow{color:#9cb3c9;letter-spacing:2.1px;font-weight:500}
+.lead{color:#d3dce6;font-weight:400}
+.button{background:#0876d8;border-color:#0876d8;border-radius:3px;font-weight:500}
+.button.secondary{border-color:#58728c;color:#e4ebf2}
+.status{color:#83bdf0;border-color:#2e6799;border-radius:3px}
+.audience-card,.service-card,.content-panel{background:#101d2b;border-color:#344b62;border-radius:3px;box-shadow:none}
+.service-card:hover{border-color:#5683ad;transform:translateY(-1px)}
+.service-icon{border-color:#3e6d99;color:#80b7e9;border-radius:3px}
+.card-link,.text-link{color:#8fc5f2}
+footer{background:#07111f;border-color:#344b62}
+input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
+.storefront-art{background:#101e2d;border-color:#435a70;border-radius:3px;box-shadow:none}
+.storefront-art:before{background:linear-gradient(180deg,#0c1827aa,#0c182733)}
+.store-sky{background:linear-gradient(180deg,#0a1522,#15283b)}
+.store-canopy{background:#0e1b2a;border-top:5px solid #334d66;border-bottom:4px solid #0876d8;box-shadow:none}
+.store-canopy span{font-family:Arial,Helvetica,sans-serif;font-size:clamp(32px,4vw,50px);font-weight:400;letter-spacing:.34em;color:#f3f5f7;text-shadow:none}
+.store-canopy i{font-size:8px;letter-spacing:.42em;color:#e0e6ed}
+.store-canopy b{color:#1686e8}
+.storefront{background:#0a1522;border-color:#344b62;box-shadow:none}
+.store-window,.store-door{border-color:#405970;background:#0c1928}
+.interior-glow{background:radial-gradient(ellipse at 48% 28%,#c4a98255,transparent 65%),linear-gradient(180deg,#273747,#101b29 75%)}
+.counter{background:linear-gradient(90deg,#3b342d,#897b68 45%,#302c29);border-top-color:#b9a58a;box-shadow:none}
+.monitor-wall{border-color:#53677b}.monitor-wall i{background:linear-gradient(135deg,#40566a,#182a3d);border-color:#33495f}
+.store-door{background:linear-gradient(90deg,#0b1726,#1b3047);border-color:#4a6076}
+.blue-mark{display:none}
+.store-camera{background:linear-gradient(135deg,#dce5ed,#75899b);border-color:#b7c6d2;box-shadow:none}
+.store-camera span{border-color:#52718b}
+.store-lamp{box-shadow:0 18px 28px 5px #d9c3a022}
+.store-pavement{background:linear-gradient(180deg,#394654,#222d39);border-top-color:#68798a}
+.store-caption{color:#d4dce5}
+.store-caption b{color:#8fc5f2}
+.alyrix-logo{width:205px}
+.logo-letters{font-family:Arial,Helvetica,sans-serif;font-size:35px;font-weight:400;letter-spacing:8.5px;fill:#f3f5f7}
+.logo-y-shape{fill:#0876d8}
+.logo-tagline{font-family:Arial,Helvetica,sans-serif;font-size:8px;font-weight:600;letter-spacing:3.05px;fill:#e5eaf0}
+@media(max-width:760px){.storefront-art{height:300px}.store-canopy span{font-size:27px;letter-spacing:.23em}.alyrix-logo{width:175px}}
