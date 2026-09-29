@@ -7,3 +7,6 @@
 
 /* Logo ALYRIX harmonisé avec la carte de visite */
 .brand{gap:0;min-width:190px}.brand-wordmark{display:block;font-size:25px;font-weight:600;letter-spacing:5.2px;line-height:1;color:#f4f7fc;white-space:nowrap}.brand-wordmark .brand-y{color:#1688ef;font-weight:700}.brand-wordmark small{display:block;font-size:8px;letter-spacing:2.5px;margin-top:7px;color:#d2dce9;font-weight:600}
+
+/* Y bleu du logotype ALYRIX, comme sur la carte de visite */
+.brand-name .logo-y{color:#1688ef;font-weight:700}
