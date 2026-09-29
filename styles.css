@@ -10,3 +10,25 @@
 
 /* Y bleu du logotype ALYRIX, comme sur la carte de visite */
 .brand-name .logo-y{color:#1688ef;font-weight:700}
+
+/* Logotype vectoriel inspiré de la carte de visite ALYRIX */
+.brand{display:flex;align-items:center;min-width:190px;gap:0}.alyrix-logo{display:block;width:205px;height:auto;overflow:visible}.logo-letters{font-family:Inter,Arial,sans-serif;font-size:36px;font-weight:500;letter-spacing:8px;fill:#f5f8fc}.logo-y-shape{fill:#087de3}.logo-tagline{font-family:Inter,Arial,sans-serif;font-size:8.5px;font-weight:600;letter-spacing:3.15px;fill:#d7e1ed}
+footer .alyrix-logo{width:190px}
+@media(max-width:760px){.site-header .alyrix-logo{width:175px}footer .alyrix-logo{width:180px}}
+/* Direction artistique renforcée : architecture, lumière et détails de sécurité */
+.hero-art{isolation:isolate;background:linear-gradient(180deg,#0b1728 0%,#112a45 55%,#091321 100%)}
+.hero-art:after{content:"";position:absolute;z-index:-1;left:0;right:0;bottom:0;height:27%;background:linear-gradient(180deg,#0b172600,#060d18 85%);border-top:1px solid #76bfff25}
+.hero-art .house{width:72%;height:72%;right:7%;background:linear-gradient(120deg,#294663 0%,#14283f 45%,#0a1524 100%);border:1px solid #6e91b2;box-shadow:inset 0 0 0 7px #08132155,0 22px 40px #0009}
+.hero-art .roof{height:23%;background:linear-gradient(180deg,#334f6c,#1a3049);border-bottom:2px solid #6d8ba8}
+.hero-art .window{background:linear-gradient(145deg,#ffdfa0 0%,#f4b968 30%,#245174 100%);border:5px solid #0a1727;box-shadow:0 0 28px #f5bb6b66,inset 0 0 18px #ffe0a077}
+.hero-art .door{background:linear-gradient(90deg,#0b1726,#1b3550);border:3px solid #6886a3}
+.hero-art .beam{background:linear-gradient(110deg,#f9d99a35,transparent 72%)}
+.hero-art .camera{background:linear-gradient(135deg,#f5f9ff,#90a9c2 60%,#526c87);border:1px solid #d4e5f4}
+.hero-art .camera span{background:#06101c;border:4px solid #5c8ab5;box-shadow:0 0 0 5px #07182a}
+.hero-art .art-label{z-index:2;background:linear-gradient(90deg,#081321dd,#08132188);border-top-color:#6baee755}
+.hero-art .art-label b{color:#65baff}
+.audience-card,.service-card{box-shadow:0 12px 32px #0002}
+.audience-card{position:relative;overflow:hidden}
+.audience-card:before{content:"";position:absolute;top:0;left:0;width:46px;height:2px;background:linear-gradient(90deg,#168df0,transparent)}
+.service-card{position:relative;overflow:hidden}
+.service-card:after{content:"";position:absolute;right:-25px;top:-35px;width:105px;height:105px;border:1px solid #318bd333;border-radius:50%;box-shadow:0 0 0 15px #318bd30a,0 0 0 30px #318bd308;pointer-events:none}
