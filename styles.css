@@ -111,3 +111,16 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 .logo-y-shape{fill:#0876d8}
 .logo-tagline{font-family:Arial,Helvetica,sans-serif;font-size:8px;font-weight:600;letter-spacing:3.05px;fill:#e5eaf0}
 @media(max-width:760px){.storefront-art{height:300px}.store-canopy span{font-size:27px;letter-spacing:.23em}.alyrix-logo{width:175px}}
+
+/* Logo maître ALYRIX : même dessin dans l’en-tête et sur l’enseigne */
+.alyrix-logo{width:205px;height:auto;display:block;overflow:visible}
+.logo-letters{font-family:Arial,Helvetica,sans-serif;font-size:37px;font-weight:400;letter-spacing:0;fill:#f4f6f8}
+.logo-y-shape{fill:#0876d8}
+.logo-tagline{font-family:Arial,Helvetica,sans-serif;font-size:8px;font-weight:600;letter-spacing:3px;fill:#e5eaf0}
+.store-canopy{display:flex;align-items:center;justify-content:center}
+.store-canopy .building-logo{display:block;width:min(48%,360px);height:auto;overflow:visible}
+.store-canopy .logo-letters{font-size:37px;fill:#f4f6f8}
+.store-canopy .logo-y-shape{fill:#0876d8}
+.store-canopy .logo-tagline{font-size:8px;letter-spacing:3px;fill:#e5eaf0}
+.store-canopy b{display:none}
+@media(max-width:760px){.alyrix-logo{width:175px}.store-canopy .building-logo{width:65%}.store-canopy .logo-letters{font-size:37px}}
