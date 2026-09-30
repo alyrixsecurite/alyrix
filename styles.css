@@ -282,3 +282,38 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 @media(prefers-reduced-motion:reduce){
  .hero.hero-background:before,.hero.hero-background:after{animation:none;will-change:auto}
 }
+
+
+/* Animation plus perceptible du fond du hero */
+.hero.hero-background{overflow:hidden}
+.hero.hero-background:before{
+  inset:-4%;
+  background-size:cover;
+  animation:alyrix-background-pan 18s ease-in-out infinite alternate;
+  transform-origin:center;
+  will-change:transform;
+}
+.hero.hero-background:after{
+  animation:alyrix-overlay-breathe 7s ease-in-out infinite alternate;
+}
+@keyframes alyrix-background-pan{
+  0%{transform:scale(1) translate3d(-1.2%,0,0)}
+  100%{transform:scale(1.13) translate3d(1.5%,-1.2%,0)}
+}
+@keyframes alyrix-overlay-breathe{
+  0%{opacity:.78}
+  100%{opacity:1}
+}
+@media(max-width:760px){
+ .hero.hero-background:before{
+   inset:-5%;
+   animation:alyrix-background-pan-mobile 18s ease-in-out infinite alternate;
+ }
+ @keyframes alyrix-background-pan-mobile{
+   0%{transform:scale(1.02) translate3d(-1%,0,0)}
+   100%{transform:scale(1.16) translate3d(1.5%,-1%,0)}
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ .hero.hero-background:before,.hero.hero-background:after{animation:none;will-change:auto}
+}
