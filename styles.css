@@ -329,3 +329,29 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 /* Synchronize SVG path coordinates with the actual background artwork */
 .hero.hero-background:before{background-position:center center!important;background-size:cover!important}
 .hero-signal-overlay{object-fit:cover}
+
+/* Lock the image and animated SVG to the same cover/crop geometry */
+.hero.hero-background{position:relative;isolation:isolate;overflow:hidden;background:#07111f}
+.hero.hero-background:before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:none!important;opacity:1!important;
+}
+.hero.hero-background:after{
+  z-index:-1;pointer-events:none;
+  background:linear-gradient(90deg,#07111ff2 0%,#07111fdf 34%,#07111f65 68%,#07111f20 100%),
+             linear-gradient(0deg,#07111f80,transparent 42%,#07111f35);
+  animation:none!important;opacity:1!important;
+}
+.hero-background-image{
+ position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;
+ z-index:-2;display:block;pointer-events:none;
+}
+.hero-signal-overlay{
+ position:absolute;inset:0;width:100%;height:100%;display:block;
+ z-index:0;pointer-events:none;overflow:hidden;
+}
+.hero-background .hero-copy{position:relative;z-index:1}
+@media(max-width:760px){
+ .hero-background-image{object-position:center center}
+ .hero.hero-background:before{background:none!important}
+}
