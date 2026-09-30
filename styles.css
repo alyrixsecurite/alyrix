@@ -152,3 +152,28 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 .brand .alyrix-logo{display:block;width:205px;height:auto;max-height:62px;object-fit:contain;object-position:left center}
 .store-canopy .building-logo{display:block;width:min(70%,420px);height:auto;max-height:130px;object-fit:contain}
 @media(max-width:760px){.site-header .brand .alyrix-logo{width:175px;max-height:55px}.store-canopy .building-logo{width:78%;max-height:105px}}
+
+
+/* Schéma animé du réseau de vidéosurveillance sur la page d’accueil */
+.network-showcase{max-width:1160px;margin:0 auto;padding:36px 24px 70px;display:grid;grid-template-columns:.72fr 1.28fr;gap:36px;align-items:center}
+.network-copy h2{font-size:clamp(28px,3vw,38px);line-height:1.12;margin:0 0 16px}
+.network-copy>p:last-child{color:var(--muted);font-size:14px;max-width:360px}
+.network-scene{position:relative;min-width:0;overflow:hidden;min-height:350px;border:1px solid #294762;background:radial-gradient(ellipse at 50% 50%,#153654 0%,#0b1b2d 56%,#07111f 100%);box-shadow:inset 0 0 60px #02091488}
+.network-grid{position:absolute;inset:0;background-image:linear-gradient(#4a83ad12 1px,transparent 1px),linear-gradient(90deg,#4a83ad12 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent)}
+.network-scene svg{position:relative;display:block;width:100%;height:auto;min-height:350px;overflow:visible}
+.floorplan{filter:drop-shadow(0 16px 22px #0008)}
+.network-lines path{stroke:#1686e8;stroke-opacity:.75;stroke-dasharray:5 7;animation:line-flow 12s linear infinite}
+@keyframes line-flow{to{stroke-dashoffset:-120}}
+.node-ring{fill:#0a1a2a;stroke:#1686e8;stroke-width:2;filter:drop-shadow(0 0 8px #1686e888)}
+.camera-body{fill:#e5edf5;stroke:#9fc8e8;stroke-width:1}
+.camera-lens{fill:#061321;stroke:#1686e8;stroke-width:2}
+.recorder-halo{fill:#1686e81a;stroke:#1686e8;stroke-opacity:.65;stroke-width:1.5;animation:halo-pulse 2.8s ease-in-out infinite}
+.recorder-box{fill:#102b43;stroke:#7fc7ff;stroke-width:1.5;filter:drop-shadow(0 0 10px #1686e888)}
+.recorder-led{fill:#70c8ff;filter:drop-shadow(0 0 5px #70c8ff)}
+@keyframes halo-pulse{50%{opacity:.45;transform:scale(1.08)}}
+.moving-points circle{filter:drop-shadow(0 0 5px #a8e1ff)}
+.scene-status{position:absolute;left:18px;bottom:14px;color:#a9c8e4;font-size:9px;letter-spacing:1.5px;background:#07111fd9;padding:7px 10px;border:1px solid #294762}
+.scene-status i{display:inline-block;width:6px;height:6px;background:#55bdff;border-radius:50%;margin-right:7px;box-shadow:0 0 9px #55bdff}
+@media(max-width:800px){.network-showcase{grid-template-columns:1fr;gap:20px;padding:28px 20px 50px}.network-copy>p:last-child{max-width:600px}.network-scene{min-height:260px}.network-scene svg{min-height:260px}}
+@media(max-width:480px){.network-scene svg{width:125%;max-width:none;margin-left:-12.5%}.scene-status{font-size:8px;left:9px;bottom:8px}}
+@media(prefers-reduced-motion:reduce){.network-lines path,.recorder-halo{animation:none}.moving-points{display:none}}
