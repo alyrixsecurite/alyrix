@@ -317,3 +317,11 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 @media(prefers-reduced-motion:reduce){
  .hero.hero-background:before,.hero.hero-background:after{animation:none;will-change:auto}
 }
+
+/* Fond stable et flux lumineux animés au-dessus du visuel */
+.hero.hero-background:before{animation:none!important;transform:none!important;inset:0;opacity:1;background-size:cover;background-position:center 52%}
+.hero.hero-background:after{animation:none!important;opacity:1}
+.hero-signal-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible}
+.hero-background .hero-copy{position:relative;z-index:1}
+@media(max-width:760px){.hero.hero-background:before{background-position:58% center;opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero-signal-overlay animateMotion{display:none}}
