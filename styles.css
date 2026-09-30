@@ -252,3 +252,33 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
  .hero.hero-background:after{background:linear-gradient(90deg,#07111ff0,#07111fa8),linear-gradient(0deg,#07111f9c,transparent 80%)}
  .hero-background .hero-copy{padding:22px 0}
 }
+
+
+/* Animation discrète du visuel architectural : respiration, travelling et balayage lumineux */
+.hero.hero-background:before{
+  background-size:108% auto;
+  animation:alyrix-bg-drift 28s ease-in-out infinite alternate;
+  will-change:background-position,background-size;
+}
+.hero.hero-background:after{
+  background-size:200% 100%,100% 100%;
+  animation:alyrix-light-sweep 13s ease-in-out infinite alternate;
+}
+@keyframes alyrix-bg-drift{
+  0%{background-position:48% 48%;background-size:108% auto}
+  100%{background-position:54% 54%;background-size:114% auto}
+}
+@keyframes alyrix-light-sweep{
+  0%{background-position:0% 50%,center}
+  100%{background-position:100% 50%,center}
+}
+@media(max-width:760px){
+ .hero.hero-background:before{background-size:auto 108%;animation:alyrix-bg-drift-mobile 30s ease-in-out infinite alternate}
+ @keyframes alyrix-bg-drift-mobile{
+  0%{background-position:54% 45%;background-size:auto 108%}
+  100%{background-position:61% 55%;background-size:auto 114%}
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ .hero.hero-background:before,.hero.hero-background:after{animation:none;will-change:auto}
+}
