@@ -325,3 +325,7 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 .hero-background .hero-copy{position:relative;z-index:1}
 @media(max-width:760px){.hero.hero-background:before{background-position:58% center;opacity:1}}
 @media(prefers-reduced-motion:reduce){.hero-signal-overlay animateMotion{display:none}}
+
+/* Synchronize SVG path coordinates with the actual background artwork */
+.hero.hero-background:before{background-position:center center!important;background-size:cover!important}
+.hero-signal-overlay{object-fit:cover}
