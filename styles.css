@@ -177,3 +177,51 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 @media(max-width:800px){.network-showcase{grid-template-columns:1fr;gap:20px;padding:28px 20px 50px}.network-copy>p:last-child{max-width:600px}.network-scene{min-height:260px}.network-scene svg{min-height:260px}}
 @media(max-width:480px){.network-scene svg{width:125%;max-width:none;margin-left:-12.5%}.scene-status{font-size:8px;left:9px;bottom:8px}}
 @media(prefers-reduced-motion:reduce){.network-lines path,.recorder-halo{animation:none}.moving-points{display:none}}
+
+
+/* Version détaillée du plan de sécurité ALYRIX */
+.network-showcase{padding-top:54px;padding-bottom:76px;grid-template-columns:.68fr 1.32fr;gap:42px}
+.network-copy{align-self:center}
+.network-copy .eyebrow{color:#7cb7e8}
+.network-copy h2{font-size:clamp(30px,3.2vw,42px);letter-spacing:-1.1px}
+.network-copy>p:last-child{font-size:15px;line-height:1.8}
+.network-scene-pro{min-height:0;height:auto;aspect-ratio:900/520;border:1px solid #345574;background:radial-gradient(ellipse at 52% 45%,#183957 0%,#0b1b2c 58%,#07111f 100%);box-shadow:0 22px 65px #0005,inset 0 0 80px #02091499;isolation:isolate}
+.network-scene-pro:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#1686e80b,transparent 45%,#1686e808);pointer-events:none}
+.scene-grid{position:absolute;inset:0;background-image:linear-gradient(#75b7e50d 1px,transparent 1px),linear-gradient(90deg,#75b7e50d 1px,transparent 1px);background-size:22px 22px;mask-image:radial-gradient(ellipse,#000 25%,transparent 88%)}
+.scene-topline{position:absolute;z-index:2;top:16px;left:19px;right:19px;display:flex;justify-content:space-between;gap:12px;color:#9dbbd5;font:9px/1.3 Arial,sans-serif;letter-spacing:1.5px}
+.scene-topline i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#53baff;margin-right:8px;box-shadow:0 0 10px #53baff}
+.network-scene-pro svg{display:block;width:100%;height:auto;min-height:0;position:relative;margin-top:12px}
+.architectural-plan .outer-wall{fill:url(#wallFill);stroke:#6a91b2;stroke-width:5;filter:drop-shadow(0 8px 18px #0008)}
+.architectural-plan .room-fill{fill:#10243a;stroke:none}
+.architectural-plan .walls{fill:none;stroke:#7293ae;stroke-width:5;stroke-linecap:square;stroke-linejoin:round}
+.architectural-plan .door-arc{stroke:#416987;stroke-width:1.5;stroke-dasharray:3 4}
+.architectural-plan .windows{stroke:#8bd0ff;stroke-width:5;filter:drop-shadow(0 0 5px #1686e866)}
+.room-details rect{fill:#17334d;stroke:#416987;stroke-width:1.5}
+.room-details path{fill:none;stroke:#416987;stroke-width:1.5}
+.room-details .desk-detail{fill:#1b3b56;stroke:#5882a4}
+.room-labels text{fill:#6e96b8;font:10px Arial,sans-serif;letter-spacing:1.6px;opacity:.8}
+.vision-cones path{fill:#1686e8;fill-opacity:.065;stroke:#1686e8;stroke-opacity:.18;stroke-width:1;stroke-dasharray:4 5}
+.signal-routes path{stroke:#1686e8;stroke-width:2;stroke-opacity:.72;stroke-dasharray:4 8;filter:drop-shadow(0 0 4px #1686e855);animation:line-flow 9s linear infinite}
+.device-pins .pin-ring{fill:#0a1a2a;stroke:#42a9f5;stroke-width:1.8;filter:drop-shadow(0 0 7px #1686e877)}
+.device-pins .pin-camera{fill:#dceaf5;stroke:#7fc7ff;stroke-width:1}
+.device-pins .pin-lens{fill:#0876d8;stroke:#d7f1ff;stroke-width:1}
+.nvr-aura{fill:#1686e81b;stroke:#55b7ff;stroke-width:1.5;stroke-opacity:.75;animation:halo-pulse 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.nvr-body{fill:#153650;stroke:#b3ddfa;stroke-width:1.5;filter:drop-shadow(0 0 12px #1686e877)}
+.nvr-screen{fill:#69c2ff}.nvr-led{fill:#79e2ff;filter:drop-shadow(0 0 5px #79e2ff)}
+.nvr-slot{stroke:#6d9abb;stroke-width:2}
+.travel-dots circle{filter:drop-shadow(0 0 6px #b9eaff)}
+.technical-labels text{fill:#a9c8e4;font:10px Arial,sans-serif;letter-spacing:1.5px;text-anchor:middle}
+.scene-legend{position:absolute;left:20px;bottom:18px;display:flex;gap:16px;align-items:center;color:#a9c3da;font:9px Arial,sans-serif;letter-spacing:.6px}
+.scene-legend span{display:flex;align-items:center;gap:6px}
+.scene-legend i{display:inline-block;width:8px;height:8px}
+.legend-camera{border:1px solid #a9dfff;border-radius:2px;background:#dceaf5}
+.legend-link{height:2px!important;width:13px!important;background:#1686e8}
+.legend-dot{border-radius:50%;background:#c7efff;box-shadow:0 0 7px #70caff}
+.network-scene-pro .scene-status{left:auto;right:18px;bottom:15px;display:flex;align-items:center;gap:8px;padding:8px 10px;background:#0a1b2cdd;border:1px solid #345574;color:#a9d7f5;font:8px Arial,sans-serif;letter-spacing:1px}
+.scene-status b{color:#72c7ff;font-weight:600;padding-left:8px;border-left:1px solid #345574}
+.scene-status i{margin:0;width:6px;height:6px}
+.scene-corner{position:absolute;right:18px;top:40px;color:#537795;font:8px Arial,sans-serif;letter-spacing:1.2px;writing-mode:vertical-rl}
+.scene-corner span{color:#80b7df;margin-top:10px}
+@media(max-width:800px){.network-showcase{grid-template-columns:1fr;gap:22px;padding:35px 20px 55px}.network-copy>p:last-child{max-width:620px}.network-scene-pro{width:100%}}
+@media(max-width:560px){.network-scene-pro{aspect-ratio:900/590}.network-scene-pro svg{width:112%;max-width:none;margin-left:-6%;margin-top:20px}.scene-topline{top:10px;left:11px;right:11px;font-size:7px;letter-spacing:.8px}.scene-legend{left:10px;bottom:10px;gap:8px;font-size:7px}.network-scene-pro .scene-status{right:9px;bottom:8px;font-size:7px;padding:6px}.scene-corner{display:none}}
+@media(prefers-reduced-motion:reduce){.signal-routes path,.nvr-aura{animation:none}.travel-dots{display:none}}
