@@ -225,3 +225,30 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 @media(max-width:800px){.network-showcase{grid-template-columns:1fr;gap:22px;padding:35px 20px 55px}.network-copy>p:last-child{max-width:620px}.network-scene-pro{width:100%}}
 @media(max-width:560px){.network-scene-pro{aspect-ratio:900/590}.network-scene-pro svg{width:112%;max-width:none;margin-left:-6%;margin-top:20px}.scene-topline{top:10px;left:11px;right:11px;font-size:7px;letter-spacing:.8px}.scene-legend{left:10px;bottom:10px;gap:8px;font-size:7px}.network-scene-pro .scene-status{right:9px;bottom:8px;font-size:7px;padding:6px}.scene-corner{display:none}}
 @media(prefers-reduced-motion:reduce){.signal-routes path,.nvr-aura{animation:none}.travel-dots{display:none}}
+
+
+/* Visuel architectural ALYRIX en arrière-plan du hero */
+.hero.hero-background{
+  position:relative;isolation:isolate;display:flex;align-items:center;min-height:590px;
+  max-width:none;padding:76px max( max(calc((100vw - var(--max))/2), 24px), 24px);
+  background:#07111f;overflow:hidden;
+}
+.hero.hero-background:before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background-image:url("alyrix-background-crop.png");
+  background-size:cover;background-position:center 52%;background-repeat:no-repeat;
+  opacity:.9;
+}
+.hero.hero-background:after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,#07111ff2 0%,#07111fdf 34%,#07111f65 68%,#07111f20 100%),
+             linear-gradient(0deg,#07111f80,transparent 42%,#07111f35);
+}
+.hero-background .hero-copy{max-width:570px;padding:30px 0}
+.hero-background .lead{max-width:510px}
+@media(max-width:760px){
+ .hero.hero-background{min-height:620px;padding:56px 22px;align-items:flex-start}
+ .hero.hero-background:before{background-position:58% center;opacity:.65}
+ .hero.hero-background:after{background:linear-gradient(90deg,#07111ff0,#07111fa8),linear-gradient(0deg,#07111f9c,transparent 80%)}
+ .hero-background .hero-copy{padding:22px 0}
+}
