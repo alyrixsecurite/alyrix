@@ -383,6 +383,6 @@ input,select,textarea{background:#0b1725;border-color:#40566e;border-radius:3px}
 @media(max-width:760px){.hero-signal-overlay{inset:26px -38% auto auto}}
 
 /* Flux lumineux : impulsions du boîtier vers les caméras, battement des caméras ; coupé si l'utilisateur réduit les animations */
-.hero-signal-overlay .glow{stroke:#2f9bff;stroke-width:18;opacity:.6}
-.hero-signal-overlay .core{stroke:#f2faff;stroke-width:6}
+.hero-signal-overlay .tail{stroke:#37a3ff;stroke-width:9;opacity:.5}
+.hero-signal-overlay .head{stroke:#f4fbff;stroke-width:7}
 @media(prefers-reduced-motion:reduce){.hero-signal-overlay .signal-flow{display:none}}
